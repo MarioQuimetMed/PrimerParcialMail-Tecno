@@ -8,10 +8,10 @@
         <version>3.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tecnoweb.grupo7sa</groupId>
-    <artifactId>tecnoweb-grupo7sa</artifactId>
+    <groupId>com.tecnoweb.grupo15sa</groupId>
+    <artifactId>tecnoweb-grupo15sa</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>tecnoweb-grupo7sa</name>
+    <name>tecnoweb-grupo15sa</name>
     <description>Proyecto Via Mail Grupo 7 SA</description>
     <url/>
     <licenses>

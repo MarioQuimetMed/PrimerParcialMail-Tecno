@@ -10,7 +10,7 @@
 ║                    DE VIAJES Y TURISMO                                    ║
 ║              Sistema de Gestión vía Correo Electrónico                   ║
 ║                                                                           ║
-║                      Grupo 7SA - Tecnología Web                          ║
+║                      Grupo 15SA - Tecnología Web                          ║
 ║                           UAGRM - FICCT                                   ║
 ║                                                                           ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
