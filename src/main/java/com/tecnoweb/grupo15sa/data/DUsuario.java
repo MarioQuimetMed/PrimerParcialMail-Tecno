@@ -166,7 +166,7 @@ public class DUsuario {
      * Buscar usuario por ID
      */
     public String[] findOneById(int id) {
-        String query = "SELECT id, nombre, apellido, cedula, email, telefono, rol, activo, fecha_registro FROM USUARIO WHERE id = ?";
+        String query = "SELECT id, nombre, apellido, cedula, email, telefono, rol,password, activo, fecha_registro FROM USUARIO WHERE id = ?";
 
         try {
             PreparedStatement ps = databaseConection.openConnection().prepareStatement(query);
@@ -174,7 +174,7 @@ public class DUsuario {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                String[] usuario = new String[9];
+                String[] usuario = new String[10];
                 usuario[0] = String.valueOf(rs.getInt("id"));
                 usuario[1] = rs.getString("nombre");
                 usuario[2] = rs.getString("apellido");
@@ -184,6 +184,7 @@ public class DUsuario {
                 usuario[6] = rs.getString("rol");
                 usuario[7] = String.valueOf(rs.getBoolean("activo"));
                 usuario[8] = rs.getString("fecha_registro");
+                usuario[9] = rs.getString("password");
 
                 System.out.println("Usuario encontrado: " + usuario[1] + " " + usuario[2] + " - " + usuario[6]);
                 rs.close();

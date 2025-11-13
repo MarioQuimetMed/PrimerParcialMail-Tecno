@@ -199,8 +199,10 @@ public class BUsuario {
         if (usuario == null) {
             return "Error: Usuario no encontrado";
         }
-        
-        if (!usuario[6].equals(passwordActual)) {
+
+        if (!usuario[9].equals(passwordActual)) {
+            System.out.println(usuario[6]);
+            System.out.println(passwordActual);
             return "Error: Contraseña actual incorrecta";
         }
         
@@ -231,8 +233,8 @@ public class BUsuario {
         int totalInactivos = 0;
         
         for (String[] usuario : usuarios) {
-            String rol = usuario[7];
-            boolean activo = usuario[8].equals("true");
+            String rol = usuario[6];
+            boolean activo = usuario[7].equals("true");
             
             if (activo) totalActivos++;
             else totalInactivos++;

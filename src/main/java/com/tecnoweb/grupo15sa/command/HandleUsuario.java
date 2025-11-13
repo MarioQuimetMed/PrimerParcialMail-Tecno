@@ -71,7 +71,7 @@ public class HandleUsuario {
             return resultado[0];
         }
         
-        String activo = resultado[8].equalsIgnoreCase("true") ? "SI" : "NO";
+        String activo = resultado[7].equalsIgnoreCase("true") ? "SI" : "NO";
         StringBuilder sb = new StringBuilder();
         sb.append("Autenticacion exitosa\n");
         sb.append("ID: ").append(resultado[0]).append("\n");
@@ -79,9 +79,9 @@ public class HandleUsuario {
         sb.append("Cedula: ").append(resultado[3]).append("\n");
         sb.append("Email: ").append(resultado[4]).append("\n");
         sb.append("Telefono: ").append(resultado[5]).append("\n");
-        sb.append("Rol: ").append(resultado[7]).append("\n");
+        sb.append("Rol: ").append(resultado[6]).append("\n");
         sb.append("Activo: ").append(activo).append("\n");
-        sb.append("Fecha registro: ").append(resultado[9]);
+        sb.append("Fecha registro: ").append(resultado[8]);
         
         return sb.toString();
     }
@@ -138,9 +138,11 @@ public class HandleUsuario {
         for (String[] u : usuarios) {
             sb.append("ID: ").append(u[0])
               .append(" | ").append(u[1]).append(" ").append(u[2])
+              .append(" | CI: ").append(u[3])
+              .append(" | Tel: ").append(u[5])
               .append(" | Email: ").append(u[4])
-              .append(" | Rol: ").append(u[8])
-              .append(" | Activo: ").append(u[9])
+              .append(" | Rol: ").append(u[6])
+              .append(" | Activo: ").append(u[7])
               .append("\n");
         }
         return sb.toString();
@@ -155,10 +157,11 @@ public class HandleUsuario {
         }
         
         return "Usuario: " + usuario[1] + " " + usuario[2] + "\n" +
+                "Cedula: " + usuario[3] + "\n"+
                "Email: " + usuario[4] + "\n" +
                "Teléfono: " + usuario[5] + "\n" +
-               "Rol: " + usuario[8] + "\n" +
-               "Activo: " + usuario[9];
+               "Rol: " + usuario[6] + "\n" +
+               "Activo: " + usuario[7];
     }
 
     private static String estadisticas(BUsuario bUsuario) {
