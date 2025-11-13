@@ -12,7 +12,7 @@ public class CommandInterpreter {
         COMMANDS.put("usuario", new String[]{"registrar", "autenticar", "actualizar", "desactivar", "reactivar", "cambiarPassword", "listar", "buscar", "estadisticas"});
         
         // CU2 - Gestión de Destinos Turísticos
-        COMMANDS.put("destino", new String[]{"registrar", "actualizar", "desactivar", "reactivar", "listarActivos", "buscarPorPais", "buscarPorCiudad", "buscarPorRango", "listar"});
+        COMMANDS.put("destino", new String[]{"registrar", "actualizar", "desactivar", "reactivar", "listarActivos", "buscarPorPais","buscar", "buscarPorCiudad", "buscarPorRango", "listar"});
         
         // CU3 - Gestión de Planes de Viaje
         COMMANDS.put("planviaje", new String[]{"crear", "actualizar", "desactivar", "reactivar", "calcularPrecio", "listarActivos", "listar", "buscar"});
